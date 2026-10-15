@@ -1,0 +1,55 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "whatsapp_number": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "additional_phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "facebook_url": {
+      "type": "string"
+    },
+    "instagram_url": {
+      "type": "string"
+    },
+    "tiktok_url": {
+      "type": "string"
+    },
+    "google_maps_url": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "about_text": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

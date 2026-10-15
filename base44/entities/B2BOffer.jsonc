@@ -1,0 +1,66 @@
+{
+  "name": "B2BOffer",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "agency_price": {
+      "type": "string"
+    },
+    "visa_type": {
+      "type": "string"
+    },
+    "service_type": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
